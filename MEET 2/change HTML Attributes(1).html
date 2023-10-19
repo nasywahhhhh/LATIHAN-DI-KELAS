@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARN Bojonegoro</title>
+    </head>
+    <body>
+        <h1>Javascript Can Change Images</h1>
+        <img id="myImage" onclick="changeImage()" src="https://i.pinimg.com/originals/cb/bf/fa/cbbffa983fe422157e8a89cbcabbb60a.png" width="300" height="180">
+        <p>Click the image to change image.</p>
+        <script>
+            function changeImage() {
+                var image = document.getElementById('myImage')
+                if (image.src.match("bulbon")) {
+                    image.src = "https://i.pinimg.com/originals/cb/bf/fa/cbbffa983fe422157e8a89cbcabbb60a.png";
+                } else {
+                    image.src = "https://cdn.idntimes.com/content-images/post/20200613/4-08f8502d6b2231325da82d53f017a134.jpg"
+                }
+                } 
+        </script>
+    </body>
+</html>
